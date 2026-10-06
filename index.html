@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bánh & quà 20/10 | Cake Crush Đà Nẵng</title>
+  <meta name="description" content="Bộ sưu tập bánh và quà tặng 20/10 của Cake Crush tại Đà Nẵng. Chọn mẫu theo người nhận, kích thước và ngân sách. Đặt cho cá nhân hoặc doanh nghiệp.">
+  <meta name="theme-color" content="#FFFBF7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Bộ icon SVG dùng chung (không dùng emoji làm icon) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></g></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5a1 1 0 011-1h9a1 1 0 011 1v16M15 9h4a1 1 0 011 1v11M2 21h20"/><path d="M8 8h3M8 12h3M8 16h3"/></g></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></g></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="5" rx="1"/><path d="M5 13v8h14v-8M12 8v13M12 8S10.5 3 7.8 3.8C5.5 4.5 7 8 12 8zM12 8s1.5-5 4.2-4.2C18.5 4.5 17 8 12 8z"/></g></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></g></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0112 7.3a4.3 4.3 0 017.5 2.5C19.5 15.4 12 20 12 20z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+  </svg>
+
+  <!-- Banner bản nháp: tự ẩn khi DRAFT_MODE = false trong js/data.js -->
+  <div class="draft-banner" id="draftBanner" hidden>
+    Bản nháp — các mục <mark class="todo">tô vàng</mark> đang chờ bổ sung dữ liệu (giá, ảnh, chính sách, liên hệ).
+  </div>
+
+  <a href="#san-pham" class="skip-link">Bỏ qua, xem mẫu bánh</a>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a href="#top" class="logo" aria-label="Cake Crush — về đầu trang">Cake Crush</a>
+      <nav class="topbar__nav" aria-label="Điều hướng">
+        <a href="#san-pham">Mẫu bánh</a>
+        <a href="#doanh-nghiep">Doanh nghiệp</a>
+        <a href="#dat-hang">Cách đặt</a>
+        <a href="#faq">Hỏi đáp</a>
+      </nav>
+      <a href="#tu-van" class="btn btn--sm btn--primary">Tư vấn</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- 1. HERO -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">Bộ sưu tập 20/10 · Đà Nẵng</p>
+          <h1>Bánh xinh cho người phụ nữ bạn thương</h1>
+          <p class="lead">Mẫu bánh và hộp quà 20/10 dành tặng mẹ, vợ, người yêu, bạn bè, đồng nghiệp. Nhận đặt cả đơn lẻ và đơn số lượng lớn cho doanh nghiệp.</p>
+          <div class="hero__cta">
+            <a href="#san-pham" class="btn btn--primary btn--lg">Xem mẫu bánh <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a href="#tu-van" class="btn btn--ghost btn--lg">Tư vấn đặt bánh</a>
+          </div>
+          <p class="hero__note"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg> Nhận bánh trước 20/10: <mark class="todo">[Cần bổ sung: hạn chót đặt hàng]</mark></p>
+
+          <ul class="trust" aria-label="Điểm nổi bật">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-award"/></svg><span><strong>12+ năm</strong> làm bánh tại Đà Nẵng</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-building"/></svg><span><strong>Đơn lẻ & doanh nghiệp</strong> báo giá theo số lượng</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-truck"/></svg><span><strong>Nhận tại cửa hàng</strong> hoặc giao tận nơi</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__img" data-ph="Ảnh hero bộ sưu tập 20/10" aria-hidden="true"></div>
+          <a href="#doanh-nghiep" class="hero__b2b">
+            <span class="hero__b2b-icon"><svg class="ic" aria-hidden="true"><use href="#i-building"/></svg></span>
+            <span><strong>Đặt quà cho công ty?</strong><br>Set quà in logo, báo giá theo ngân sách</span>
+            <svg class="ic hero__b2b-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. NHU CẦU KHÁCH HÀNG -->
+    <section class="section">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Trước khi chọn quà</p>
+          <h2 class="section__title">Tặng bánh 20/10, bạn thường băn khoăn gì?</h2>
+        </header>
+        <div class="grid grid--3">
+          <article class="card need">
+            <span class="need__num">01</span>
+            <h3>Chọn quà sao cho hợp?</h3>
+            <p>Mẹ thích nhẹ nhàng, người yêu thích dễ thương, đồng nghiệp cần dễ chia phần. Lọc mẫu theo người nhận để chọn nhanh hơn.</p>
+          </article>
+          <article class="card need">
+            <span class="need__num">02</span>
+            <h3>Vừa túi tiền không?</h3>
+            <p>Mỗi mẫu có nhiều kích thước, giá ghi rõ theo từng size. Đặt nhiều phần cho công ty sẽ được tư vấn set theo ngân sách.</p>
+          </article>
+          <article class="card need">
+            <span class="need__num">03</span>
+            <h3>Đặt và nhận có tiện không?</h3>
+            <p>Để lại thông tin một lần, Cake Crush gọi lại xác nhận. Bạn chọn nhận tại cửa hàng hoặc giao tận nơi trong Đà Nẵng.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SẢN PHẨM -->
+    <section class="section section--tint" id="san-pham">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Bộ sưu tập</p>
+          <h2 class="section__title">Mẫu bánh & quà 20/10</h2>
+          <p class="section__sub">Chọn người nhận để lọc mẫu, chọn kích thước để xem giá.</p>
+        </header>
+
+        <div class="filters-wrap">
+          <p class="filters__label" id="filtersLabel">Bạn tặng ai?</p>
+          <div class="filters" role="group" aria-labelledby="filtersLabel" id="filters"></div>
+        </div>
+        <p class="sr-only" id="filterStatus" role="status" aria-live="polite"></p>
+
+        <div class="grid grid--products" id="productGrid"></div>
+        <p class="empty" id="emptyState" hidden>Chưa có mẫu cho lựa chọn này. <a href="#tu-van">Nhắn để được tư vấn riêng</a>.</p>
+
+        <p class="fineprint">Ảnh, tên và mô tả là bản đề xuất. <mark class="todo">[Cần bổ sung: ảnh chụp bánh thật, vị bánh, giá theo size]</mark></p>
+      </div>
+    </section>
+
+    <!-- 3b. DOANH NGHIỆP (đường đi riêng cho chủ doanh nghiệp / HR) -->
+    <section class="section section--dark" id="doanh-nghiep">
+      <div class="container b2b">
+        <div class="b2b__text">
+          <p class="eyebrow eyebrow--on-dark">Quà tặng doanh nghiệp</p>
+          <h2>Đặt quà 20/10 cho cả công ty, một đầu mối lo trọn</h2>
+          <p class="b2b__lead">Cake Crush nhận làm set quà doanh nghiệp theo ngân sách. Để lại số lượng và ngân sách dự kiến để được báo giá.</p>
+          <div class="b2b__cta">
+            <a href="#tu-van" class="btn btn--light btn--lg js-pick-product" data-product="qua-doanh-nghiep">Nhận báo giá doanh nghiệp</a>
+          </div>
+          <p class="b2b__todo"><mark class="todo">[Cần bổ sung: số lượng tối thiểu, giá theo bậc số lượng, hóa đơn VAT, thời gian sản xuất]</mark></p>
+        </div>
+        <ul class="b2b__list">
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><div><strong>In logo, tùy chỉnh thông điệp</strong><span>Đúng nhận diện thương hiệu của công ty</span></div></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><div><strong>Thiệp & túi theo yêu cầu</strong><span>Gọn gàng, dễ trao tay cho từng người</span></div></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><div><strong>Lên lịch giao theo yêu cầu</strong><span>Phù hợp kế hoạch tặng quà nội bộ, đối tác</span></div></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><div><strong>Báo giá theo số lượng & ngân sách</strong><span>Tư vấn set phù hợp trước khi chốt đơn</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. LÝ DO CHỌN -->
+    <section class="section">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Về Cake Crush</p>
+          <h2 class="section__title">Vì sao chọn Cake Crush?</h2>
+        </header>
+        <div class="grid grid--3">
+          <article class="card reason">
+            <span class="reason__icon"><svg class="ic" aria-hidden="true"><use href="#i-layers"/></svg></span>
+            <h3>Sản phẩm đa dạng</h3>
+            <p>Bánh kem thiết kế, bento, mini cake, cupcake, cookies và hộp quà. Một nơi đặt đủ cho nhiều người nhận.</p>
+          </article>
+          <article class="card reason">
+            <span class="reason__icon"><svg class="ic" aria-hidden="true"><use href="#i-gift"/></svg></span>
+            <h3>Nhiều phân khúc quà</h3>
+            <p>Từ một chiếc bento nhỏ đến set quà in logo cho doanh nghiệp. Có thể tùy chỉnh màu sắc, lời chúc, thiệp và túi.</p>
+          </article>
+          <article class="card reason">
+            <span class="reason__icon"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg></span>
+            <h3>Hợp với mọi người nhận</h3>
+            <p>Mẹ, vợ, người yêu, bạn bè, đồng nghiệp hay đối tác đều có mẫu phù hợp, cả đơn lẻ lẫn số lượng lớn.</p>
+          </article>
+        </div>
+        <p class="brand-line"><strong>Hơn 12 năm làm bánh tại Đà Nẵng</strong> · <em>Your cakes, our crush!</em></p>
+      </div>
+    </section>
+
+    <!-- 5. HƯỚNG DẪN ĐẶT HÀNG -->
+    <section class="section section--tint" id="dat-hang">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Đơn giản, rõ ràng</p>
+          <h2 class="section__title">Đặt bánh trong 4 bước</h2>
+        </header>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num" aria-hidden="true">1</span>
+            <div><h3>Chọn mẫu</h3><p>Xem mẫu, chọn kích thước phù hợp.</p></div>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">2</span>
+            <div><h3>Gửi yêu cầu</h3><p>Điền form: mẫu, số lượng, ngày cần nhận.</p></div>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">3</span>
+            <div><h3>Xác nhận đơn</h3><p>Cake Crush liên hệ chốt mẫu, giá, cách nhận. <mark class="todo">[Cần bổ sung: thời gian phản hồi, quy định đặt cọc]</mark></p></div>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">4</span>
+            <div><h3>Nhận bánh</h3><p>Nhận tại cửa hàng hoặc giao tận nơi. <mark class="todo">[Cần bổ sung: khu vực & phí giao]</mark></p></div>
+          </li>
+        </ol>
+        <div class="steps__cta">
+          <a href="#tu-van" class="btn btn--primary btn--lg">Bắt đầu gửi yêu cầu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FAQ -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <header class="section__head">
+          <p class="eyebrow">Hỏi đáp</p>
+          <h2 class="section__title">Câu hỏi thường gặp</h2>
+        </header>
+        <div class="faq">
+          <details>
+            <summary>Cần đặt trước bao lâu?</summary>
+            <div class="faq__body">
+              <p>Mẫu có sẵn và mẫu tùy chỉnh có thời gian chuẩn bị khác nhau. Dịp 20/10 đơn nhiều, bạn nên đặt sớm để giữ lịch.</p>
+              <p><mark class="todo">[Cần bổ sung: số ngày đặt trước cho mẫu thường / mẫu tùy chỉnh / đơn số lượng lớn, hạn chót nhận đơn 20/10]</mark></p>
+            </div>
+          </details>
+          <details>
+            <summary>Có giao hàng không? Phí bao nhiêu?</summary>
+            <div class="faq__body">
+              <p>Có thể nhận tại cửa hàng hoặc giao tận nơi trong Đà Nẵng.</p>
+              <p><mark class="todo">[Cần bổ sung: khu vực giao, phí giao theo khu, khung giờ giao, địa chỉ các chi nhánh]</mark></p>
+            </div>
+          </details>
+          <details>
+            <summary>Bảo quản bánh thế nào?</summary>
+            <div class="faq__body">
+              <p>Bánh kem nên để ngăn mát tủ lạnh và dùng sớm để ngon nhất. Tránh để bánh ngoài nắng hoặc trong cốp xe lâu.</p>
+              <p><mark class="todo">[Cần bổ sung: thời gian dùng tốt nhất cho từng loại bánh, hướng dẫn bảo quản cookies/hộp quà]</mark></p>
+            </div>
+          </details>
+          <details>
+            <summary>Có tùy chỉnh mẫu, lời chúc được không?</summary>
+            <div class="faq__body">
+              <p>Được. Bạn có thể đổi màu, ghi lời chúc, thêm thiệp. Mức độ chỉnh sửa lớn sẽ được báo giá trước khi chốt đơn.</p>
+              <p><mark class="todo">[Cần bổ sung: phạm vi tùy chỉnh và phụ phí (nếu có)]</mark></p>
+            </div>
+          </details>
+          <details>
+            <summary>Công ty muốn đặt số lượng lớn thì sao?</summary>
+            <div class="faq__body">
+              <p>Cake Crush nhận làm set quà doanh nghiệp: in logo, tùy chỉnh thông điệp, thiệp, túi, lên lịch giao theo yêu cầu. Để lại số lượng và ngân sách dự kiến để được báo giá.</p>
+              <p><mark class="todo">[Cần bổ sung: số lượng tối thiểu, giá theo bậc số lượng, có xuất hóa đơn VAT không, thời gian sản xuất]</mark></p>
+            </div>
+          </details>
+        </div>
+        <p class="faq__more">Chưa thấy câu trả lời? <a href="#tu-van">Gửi câu hỏi kèm yêu cầu tư vấn</a></p>
+      </div>
+    </section>
+
+    <!-- 7. FORM ĐĂNG KÝ TƯ VẤN -->
+    <section class="section section--accent" id="tu-van">
+      <div class="container lead-wrap">
+        <div class="lead-wrap__intro">
+          <p class="eyebrow">Tư vấn miễn phí</p>
+          <h2>Đăng ký tư vấn đặt bánh 20/10</h2>
+          <p class="lead-wrap__sub">Để lại thông tin, Cake Crush sẽ liên hệ tư vấn mẫu và báo giá. <mark class="todo">[Cần bổ sung: thời gian phản hồi]</mark></p>
+          <ul class="checklist">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Tư vấn mẫu hợp người nhận và ngân sách</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Báo giá rõ theo kích thước, số lượng</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Xác nhận cách nhận: tại cửa hàng hoặc giao tận nơi</li>
+          </ul>
+          <p class="alt-contact">Hoặc nhắn trực tiếp: <span id="altContact"></span></p>
+        </div>
+
+        <form class="form card" id="leadForm" novalidate aria-labelledby="formTitle">
+          <h3 class="form__title" id="formTitle">Thông tin đặt bánh</h3>
+          <p class="form__hint">Mục có dấu <span aria-hidden="true">*</span> là bắt buộc. Chỉ mất khoảng 1 phút.</p>
+
+          <div class="field">
+            <label for="name">Họ tên <span class="req" aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Nguyễn Thị Lan" aria-describedby="err-name">
+            <small class="err" id="err-name" data-for="name"></small>
+          </div>
+          <div class="field">
+            <label for="phone">Số điện thoại <span class="req" aria-hidden="true">*</span></label>
+            <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="0905 123 456" aria-describedby="err-phone">
+            <small class="err" id="err-phone" data-for="phone"></small>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="product">Sản phẩm quan tâm <span class="req" aria-hidden="true">*</span></label>
+              <select id="product" name="product" required aria-describedby="err-product">
+                <option value="">Chọn sản phẩm</option>
+              </select>
+              <small class="err" id="err-product" data-for="product"></small>
+            </div>
+            <div class="field">
+              <label for="size">Kích thước</label>
+              <select id="size" name="size">
+                <option value="">Chưa chọn</option>
+              </select>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="quantity">Số lượng <span class="req" aria-hidden="true">*</span></label>
+              <input id="quantity" name="quantity" type="number" inputmode="numeric" min="1" step="1" value="1" required aria-describedby="err-quantity">
+              <small class="err" id="err-quantity" data-for="quantity"></small>
+            </div>
+            <div class="field">
+              <label for="date">Ngày cần nhận <span class="req" aria-hidden="true">*</span></label>
+              <input id="date" name="date" type="date" required aria-describedby="err-date">
+              <small class="err" id="err-date" data-for="date"></small>
+            </div>
+          </div>
+          <div class="field">
+            <label for="note">Ghi chú <span class="muted">(không bắt buộc)</span></label>
+            <textarea id="note" name="note" rows="3" placeholder="Lời chúc, màu yêu thích, ngân sách, tên công ty nếu đặt số lượng lớn..."></textarea>
+          </div>
+
+          <p class="form__error" id="formError" role="alert" hidden></p>
+          <button type="submit" class="btn btn--primary btn--block btn--lg" id="submitBtn">Gửi yêu cầu tư vấn</button>
+          <p class="form__privacy">Thông tin chỉ dùng để Cake Crush liên hệ tư vấn đơn hàng của bạn.</p>
+
+          <div class="form__success" id="formSuccess" hidden role="status" tabindex="-1">
+            <span class="form__success-icon"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>
+            <h3>Đã nhận yêu cầu, cảm ơn bạn!</h3>
+            <p>Cake Crush sẽ liên hệ qua số <strong id="successPhone"></strong> để tư vấn và xác nhận đơn.</p>
+            <button type="button" class="btn btn--ghost btn--sm" id="newRequest">Gửi yêu cầu khác</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="logo">Cake Crush</p>
+        <p class="muted">Your cakes, our crush! · Bánh kem & quà tặng tại Đà Nẵng</p>
+      </div>
+      <ul class="footer__branches" id="branches"></ul>
+    </div>
+  </footer>
+
+  <!-- Thanh CTA cố định trên điện thoại: hiện sau hero, ẩn khi đang ở form -->
+  <div class="mobile-cta" id="mobileCta">
+    <a href="#san-pham" class="btn btn--ghost">Xem mẫu</a>
+    <a href="#tu-van" class="btn btn--primary">Tư vấn đặt bánh</a>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
