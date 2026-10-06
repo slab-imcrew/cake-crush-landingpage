@@ -47,11 +47,11 @@ window.CC_CONFIG = {
       desc: "Bánh kem trang trí hoa kem, tông màu nhẹ nhàng. Có thể ghi lời chúc riêng.",
       recipients: ["me", "nguoi-thuong"],
       tint: "#F6DDE0",
-      image: "",
+      image: "https://drive.google.com/uc?id=1qLwfBldu_hA42OPDw91QDGRBguQ_p2lV&export=view",
       sizes: [
-        { label: "14 cm", note: "khoảng ___ người", price: null },
-        { label: "16 cm", note: "khoảng ___ người", price: null },
-        { label: "18 cm", note: "khoảng ___ người", price: null }
+        { label: "14 cm", note: "khoảng 4-6 người", price: 450000 },
+        { label: "16 cm", note: "khoảng 6-8 người", price: 550000 },
+        { label: "18 cm", note: "khoảng 8-10 người", price: 650000 }
       ]
     },
     {
@@ -61,9 +61,9 @@ window.CC_CONFIG = {
       desc: "Bánh nhỏ trong hộp xinh, vừa cho 1–2 người. Viết lời nhắn ngắn trên mặt bánh.",
       recipients: ["nguoi-thuong", "ban-be"],
       tint: "#F3E6D8",
-      image: "",
+      image: "https://drive.google.com/uc?id=1IpkgK-1S6qwBMKZF9qbE9GyT7jOXZDjx&export=view",
       sizes: [
-        { label: "Bento", note: "1–2 người", price: null }
+        { label: "Bento", note: "1–2 người", price: 180000 }
       ]
     },
     {
@@ -73,9 +73,9 @@ window.CC_CONFIG = {
       desc: "Bánh nhỏ, dễ thương, dễ chụp ảnh. Hợp để tặng bạn bè hoặc tặng lẻ trong nhóm.",
       recipients: ["ban-be", "dong-nghiep"],
       tint: "#E8EEDF",
-      image: "",
+      image: "https://drive.google.com/uc?id=1rPNALL_k7zJ25bfsCFNPhPZdDd0yYSpP&export=view",
       sizes: [
-        { label: "Mini", note: "kích thước ___", price: null }
+        { label: "Mini", note: "kích thước 10cm", price: 120000 }
       ]
     },
     {
@@ -85,11 +85,11 @@ window.CC_CONFIG = {
       desc: "Hộp cupcake trang trí hoa, dễ chia phần cho cả phòng ban hoặc nhóm bạn.",
       recipients: ["dong-nghiep", "ban-be"],
       tint: "#F7E3EC",
-      image: "",
+      image: "https://drive.google.com/uc?id=1TjsZNZfF3oGmMrehdUBJVLXXk2TJSSBF&export=view",
       sizes: [
-        { label: "Hộp 6", note: "6 bánh", price: null },
-        { label: "Hộp 9", note: "9 bánh", price: null },
-        { label: "Hộp 12", note: "12 bánh", price: null }
+        { label: "Hộp 6", note: "6 bánh", price: 250000 },
+        { label: "Hộp 9", note: "9 bánh", price: 350000 },
+        { label: "Hộp 12", note: "12 bánh", price: 450000 }
       ]
     },
     {
@@ -99,10 +99,10 @@ window.CC_CONFIG = {
       desc: "Hộp quà kết hợp bánh ngọt và cookies icing, kèm thiệp. Gọn gàng, dễ trao tay.",
       recipients: ["me", "doi-tac", "dong-nghiep"],
       tint: "#EFE4F2",
-      image: "",
+      image: "https://drive.google.com/uc?id=12VmMFeckCRZQyKTfGl3NdHnSmHG0pI76&export=view",
       sizes: [
-        { label: "Hộp nhỏ", note: "thành phần ___", price: null },
-        { label: "Hộp lớn", note: "thành phần ___", price: null }
+        { label: "Hộp nhỏ", note: "3-4 items", price: 280000 },
+        { label: "Hộp lớn", note: "6-8 items", price: 450000 }
       ]
     },
     {
@@ -112,7 +112,7 @@ window.CC_CONFIG = {
       desc: "Set quà theo ngân sách, tùy chỉnh màu sắc, thông điệp, in logo, thiệp và túi. Báo giá theo số lượng.",
       recipients: ["dong-nghiep", "doi-tac"],
       tint: "#E3ECEF",
-      image: "",
+      image: "https://drive.google.com/uc?id=10y4E5Y3p7yLOK9CzuKKHHA81U51jvXBa&export=view",
       bulk: true,
       sizes: [
         { label: "Theo ngân sách", note: "tư vấn riêng", price: null }

@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "PowerShell(& \"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" auth login)",
-      "PowerShell(& \"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" repo edit slab-imcrew/cake-crush-landingpage --enable-pages --pages-source=main --pages-branch=main)"
+      "PowerShell(& \"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" repo edit slab-imcrew/cake-crush-landingpage --enable-pages --pages-source=main --pages-branch=main)",
+      "mcp__claude_ai_Google_Drive__download_file_content"
     ]
   }
 }
