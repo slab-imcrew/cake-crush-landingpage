@@ -14,6 +14,11 @@ window.CC_CONFIG = {
   // true: hiện banner + nhãn vàng để rà soát. Đổi thành false khi đã điền đủ.
   DRAFT_MODE: true,
 
+  // Backend API base URL
+  // Localhost: "" hoặc "http://localhost:3000"
+  // Production: "https://your-railway-url"
+  API_BASE: "", // Thay bằng Railway URL khi deploy
+
   // URL nhận dữ liệu form (Google Apps Script, Formspree, CRM...). "" = chưa kết nối,
   // dữ liệu chỉ lưu tạm trên trình duyệt để thử.
   FORM_ENDPOINT: "",

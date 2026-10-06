@@ -216,9 +216,15 @@
     });
   });
 
+  function getApiBase() {
+    // Lấy base URL từ config, hoặc dùng relative path (cho localhost)
+    return cfg.API_BASE || "";
+  }
+
   function generateQRCode(name, phone) {
     var successDiv = document.getElementById("formSuccess");
-    fetch("/api/generate-qr", {
+    var apiBase = getApiBase();
+    fetch(apiBase + "/api/generate-qr", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name: name, phone: phone, amount: 100000 })
@@ -241,7 +247,8 @@
 
   // TODO: khi có FORM_ENDPOINT, dữ liệu được POST dạng JSON tới endpoint đó.
   function send(lead) {
-    return fetch("/api/submit", {
+    var apiBase = getApiBase();
+    return fetch(apiBase + "/api/submit", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(lead)
