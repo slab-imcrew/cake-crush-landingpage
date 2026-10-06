@@ -205,32 +205,50 @@
 
     send(lead).then(function () {
       document.getElementById("successPhone").textContent = lead.phone;
+      generateQRCode(lead.name, lead.phone);
       document.getElementById("formSuccess").hidden = false;
-    }).catch(function () {
+    }).catch(function (err) {
       alert("Chưa gửi được yêu cầu. Bạn thử lại hoặc nhắn fanpage Cake Crush nhé.");
+      console.error(err);
     }).finally(function () {
       btn.disabled = false;
       btn.textContent = "Gửi yêu cầu tư vấn";
     });
   });
 
+  function generateQRCode(name, phone) {
+    var successDiv = document.getElementById("formSuccess");
+    fetch("/api/generate-qr", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name: name, phone: phone, amount: 100000 })
+    })
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      if (data.success) {
+        var qrHtml = '<div style="margin-top: 15px; text-align: center;">' +
+          '<p style="font-size: 14px; color: #666;">📱 Quét mã để thanh toán:</p>' +
+          '<img src="' + data.imageUrl + '" alt="QR Code" style="max-width: 250px; margin: 10px 0;">' +
+          '<p style="font-size: 12px; color: #999;">Ngân hàng: ACB | Tài khoản: 833336666</p>' +
+          '</div>';
+        successDiv.innerHTML = successDiv.innerHTML + qrHtml;
+      }
+    })
+    .catch(function(err) {
+      console.error("QR generation failed:", err);
+    });
+  }
+
   // TODO: khi có FORM_ENDPOINT, dữ liệu được POST dạng JSON tới endpoint đó.
   function send(lead) {
-    if (cfg.FORM_ENDPOINT) {
-      return fetch(cfg.FORM_ENDPOINT, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(lead)
-      }).then(function (r) { if (!r.ok) throw new Error(r.status); });
-    }
-    // Chưa có endpoint: lưu tạm trên trình duyệt để chạy thử
-    try {
-      var list = JSON.parse(localStorage.getItem("cc_leads_2010") || "[]");
-      list.push(lead);
-      localStorage.setItem("cc_leads_2010", JSON.stringify(list));
-    } catch (err) { /* bỏ qua nếu trình duyệt chặn storage */ }
-    console.info("[Cake Crush] Lead (chưa kết nối FORM_ENDPOINT):", lead);
-    return new Promise(function (resolve) { setTimeout(resolve, 400); });
+    return fetch("/api/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(lead)
+    }).then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      return r.json();
+    });
   }
 
   document.getElementById("newRequest").addEventListener("click", function () {
